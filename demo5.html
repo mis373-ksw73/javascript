@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- DOES NOT WORK? DEMO? -->
+<html>
+<head>
+<script>
+function set() {
+    var fname = document.forms["frm1"]["fname"];
+    fname.value = "Please enter first name.";
+    var lname = document.forms["frm1"]["lname"];
+    lname.value = "Please enter last name.";
+    return false;
+}
+function clear_fields() {
+    var fname = document.forms["frm1"]["fname"];
+    fname.value = "";
+    var lname = document.forms["frm1"]["lname"];
+    lname.value = "";
+    return true;
+}
+</script>
+</head>
+<body>
+
+<h1>DOM Set and Clear</h1>
+
+<form id="frm1" method='post' action="http://www.yahoo.com  ">
+<input type="text" id="fname" name="first_name">
+<input type="text" id="lname" name="last_name">
+<input type="button" id="submitButton" value="Set" onClick="return set()">
+<input type="button" id="clearButton" value="Clear" onClick="return clear_fields()">
+</form>
+
+<p id="demo"></p>
+
+</body>
+</html> 
+
+

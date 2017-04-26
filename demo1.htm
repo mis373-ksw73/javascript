@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script>
+function list() {
+    var dayTime = false;
+    var count = 1;
+    var day = 5;
+    var month = 10;
+    var total = 0;
+
+    if (dayTime) {
+        console.log("The sun is shining.");
+    }
+
+    // This won't work...
+    // if (count) {
+    //     console.log("This won't work.");
+    // }
+
+    // Note the use of == for comparisons
+    // if has to be in lower case
+    // The test condition is always within parentheses
+    if (count == 1) {
+        console.log("The count is 1.");
+    }
+
+    // OR statement
+    if ( (count == 0) || (dayTime) ) {
+        console.log("The count is 0 OR it is dayTime");
+    } else if (count == 1) {
+        console.log("The count is 1 again.");
+    } else {
+        console.log("The count is not 0 and "
+                          +"not 1 and it is not day time");
+    }
+
+    // AND statement
+    if ( (count == 1) && !(dayTime) ) {
+        console.log("The count is 1 AND it is NOT dayTime");
+    }
+
+    // for statement
+    count = 3;
+    for (var i = 0; i < count; i++) {
+        console.log("For Loop Iteration " + i);
+    }
+
+    // while statement
+    count = 0;
+    while (count < 3) {
+        console.log("While Loop Iteration " + count);
+        count++;
+    }
+    console.log(total);
+
+    // case statement
+    day = 4;
+    switch (day) {
+        case 1:  
+            console.log("Sunday"); 
+            break;
+        case 2:  
+            console.log("Monday");
+            break;
+        case 3:  
+            console.log("Tuesday");
+            break;
+        case 4:
+            console.log("Wednesday");
+            break;
+        case 5:
+            console.log("Thursday");
+            break;
+        case 6:
+            console.log("Friday");
+            break;
+        case 7:
+            console.log("Saturday");
+            break;
+        default: 
+            console.log("Hey, that's not a valid month!");
+            break;
+    }
+
+    // case statement
+    switch (month) {
+        case 1:  
+        case 2:  
+        case 3:  
+        case 4:
+            console.log("Spring");
+            break;
+        case 5:
+        case 6:
+        case 7:
+        case 8:  
+            console.log("Summer");
+            break;
+        case 9:
+        case 10:
+        case 11:
+        case 12: 
+            console.log("Fall");
+            break;
+        default: 
+            console.log("Hey, that's not a valid month!");
+            break;
+    }
+
+    var x = 10;
+    var y = 5;
+    var bool1 = true;
+    var bool2 = false;
+    console.log( "x = " + x );
+    console.log( "y = " + y );
+
+    console.log();
+    console.log("ARITMETIC OPERATIONS");
+    console.log( "x + y = " + (x + y) );
+    console.log( "x - y = " + (x - y) );
+    console.log( "x * y = " + (x * y) );
+    console.log( "x / y = " + (x / y) );
+    console.log( "x % y = " + (x % y) );
+    console.log( "x % 3 = " + (x % 3) );
+
+    console.log();
+    x = 10;
+    console.log( "x++  " + (x++) );
+    x = 10;
+    console.log( "++x  " + (++x) );
+    x = 10;
+    console.log( "x--  " + (x--) );
+    x = 10;
+    console.log( "--x  " + (--x) );
+
+    console.log();
+    console.log("RELATIONAL OPERATIONS");
+    console.log( "x > y = " + (x > y) );
+    console.log( "x >= y = " + (x >= y) );
+    console.log( "x < y = " + (x < y) );
+    console.log( "x <= y = " + (x <= y) );
+    console.log( "x == y = " + (x == y) );
+    console.log( "x != y = " + (x != y) );
+
+    console.log();
+    console.log("CONDITIONAL OPERATIONS");
+    console.log( "AND --> false && true = " 
+                      + (false && true) );
+
+    console.log( "AND --> false & true = " + (false & true) 
+                             + " always evaluates both operands");
+
+    console.log( "OR  --> true || false = " 
+                      + (true || false) );
+
+    console.log( "OR  --> true | false = " + (true | false) 
+                             + "  always evaluates both operands");
+}
+
+list();
+</script>
+</head>
+<!-- -->
+<body>
+<h1>Title</h1>
+<div id="d1"></div>
+<p id="p1"></p>
+</body>
+
+</html> 
+
+

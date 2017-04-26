@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- DOES NOT WORK? DEMO? -->
+<html>
+<head>
+<script>
+function validateForm() {
+
+    var p = document.getElementById("demo")
+    p.innerHTML = "";
+    
+    var x = document.forms["frm1"]["fname"].value;
+
+    if (x == "") {
+        p.innerHTML = "First Name must be filled out";
+        return false;
+    }
+    var y = document.forms["frm1"]["lname"].value;
+    if (y == "") {
+        alert("Last Name must be filled out");
+        return false;
+    }
+    return true;   
+}
+</script>
+</head>
+<body>
+
+<h1>DOM Set and Clear</h1>
+
+<form name="frm1" action="https://www.yahoo.com" onsubmit="return validateForm()" method="post">
+First Name: <input type="text" id="fname">
+Last Name: <input type="text" id="lname">
+<input type="submit" value="Submit">
+</form>
+
+<p id="demo"></p>
+
+</body>
+</html> 
+
+

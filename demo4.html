@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- DOES NOT WORK? DEMO? -->
+<html>
+<head>
+<script>
+function list() {
+   var all = document.getElementsByTagName("*");
+   for (var i=0, max=all.length; i < max; i++) {
+      // Do something with the element here
+      document.getElementById('demo').innerHTML += '<br />' + all[i];
+   }
+}
+function clear2() {
+   document.getElementById('demo').innerHTML = '';
+}
+</script>
+</head>
+<body>
+
+<h1>DOM Lister</h1>
+
+<button type="button" onclick="javascript:list()">DOM Lister</button>
+<br />
+<button type="button" onclick="javascript:clear2()">Clear</button>
+
+<p id="demo"></p>
+
+</body>
+</html> 
+
+
